@@ -1,0 +1,17 @@
+server:
+  port: 8001
+spring:
+  freemarker:
+    prefer-file-system-access: false
+  application:
+    name: eureka
+  security:
+    user:
+      name: root
+      password: 123456
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    server-url:
+      defaultZone: http://localhost:8005/eureka
